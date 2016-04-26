@@ -1,3 +1,4 @@
-require "rake"
+require 'middleman-gh-pages'
 
-require "middleman-gh-pages"
+ENV["REMOTE_NAME"]="ghp"
+ENV["BRANCH_NAME"]="gh-pages"
