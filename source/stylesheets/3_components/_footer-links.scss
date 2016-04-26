@@ -6,10 +6,18 @@
 
   li {
     display: inline-block;
-    margin: 29px 40px 29px 0;
+    margin: 29px 30px 29px 0;
+
+    @media (min-width: $tablet) {
+      margin-right: 40px;
+    }
   }
 
   i:before {
-    font-size: 32px;
+    font-size: 28px;
+
+    @media (min-width: $tablet) {
+      font-size: 32px;
+    }
   }
 }

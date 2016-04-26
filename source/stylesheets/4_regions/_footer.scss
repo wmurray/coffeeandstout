@@ -8,12 +8,22 @@ footer {
 
   .container {
     padding: 0;
+
+    > div:first-child {
+      @media (max-width: $mobile - 1) {
+        padding-right: 0;
+      }
+    }
   }
 
   p {
     display: block;
-    font-size: 12px;
+    font-size: 10px;
     margin: 37px 0;
     text-align: right;
+
+    @media (min-width: $tablet) {
+      font-size: 12px;
+    }
   }
 }
